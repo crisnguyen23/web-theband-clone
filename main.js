@@ -3,6 +3,8 @@ const modal = document.querySelector(".js-modal");
 const modalContainer = document.querySelector(".js-modal-container");
 const modalClose = document.querySelector(".js-modal-close");
 
+const sliders = document.querySelectorAll(".slider");
+
 //Loops btn when click
 for (const buyBtn of buyBtns) {
   buyBtn.onclick = function () {
@@ -54,3 +56,14 @@ for (let i = 0; i < menuItems.length; i++) {
     }
   };
 }
+
+// Slider 4s automation
+let blockIndex = 1;
+setInterval(() => {
+  sliders.forEach((slider) => {
+    slider.style.display = "none";
+  });
+  sliders[blockIndex].style.display = "block";
+  blockIndex++;
+  blockIndex = blockIndex >= sliders.length ? 0 : blockIndex;
+}, 4000);

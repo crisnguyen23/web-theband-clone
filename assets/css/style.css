@@ -198,14 +198,20 @@ html {
   line-height: 46.5px;
 }
 
-#slider {
+.slider {
   position: relative;
   margin-top: 46.5px;
-  padding-top: 50%;
-  background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
+  /* padding-top: 50%; */
+  /* background: url("../img/slider/chicago.jpeg") top center / cover no-repeat; */
+}
+.img-slider {
+  width: 100%;
 }
 
-#slider .text-content {
+.slider.second {
+}
+
+.text-content {
   position: absolute;
   bottom: 47px;
   /* Align center m1 */
@@ -223,14 +229,14 @@ html {
   color: #fff;
 }
 
-#slider .text-heading {
+.text-heading {
   /* margin: 10px; */
   font-size: 24px;
   font-weight: 500;
   text-shadow: 0 0 1px #000;
 }
 
-#slider .text-description {
+.text-description {
   margin-top: 25px;
   font-size: 15px;
   text-shadow: 0 0 1px #000;
